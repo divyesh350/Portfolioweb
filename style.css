@@ -47,20 +47,14 @@ nav{
     /* align-items: center; */
    
 }
-ul{
+.nav-menu{
     display: flex;
-    gap: 20px;
-    position: relative;
-    top: 5px;
+    align-items: center;
+    gap: 30px;
 }
-ul li{
-    list-style: none;
+.nav-menu a{
+    color: #000;
    
-}
-ul li a{
-    text-decoration: none;
-   
-    color: black;
 }
 .nav-btn{
     background-color: rgb(8, 144, 78);
