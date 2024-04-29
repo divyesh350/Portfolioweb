@@ -29,7 +29,7 @@ a{
    width: 100%;
     /* display: flex; */
    
-    background-color: var(--color4);
+    background-color: #FFFFFF;
 }
 nav{
     display: flex;
@@ -56,6 +56,11 @@ nav{
     color: #000;
     
 }
+.nav-menu a:hover{
+    font-size: 20px;
+    font-weight: 800;
+    color: blue;
+}
 .nav-btn{
     background-color: rgb(8, 144, 78);
     color: white;
@@ -80,7 +85,7 @@ nav{
 
 .page-1{
     height: 640px;
-    /* background-color: #DEE6FE; */
+    background-color: #F6F8FF;
     display: flex;
     gap: 250px;
     align-content: center;
@@ -137,7 +142,7 @@ nav{
 
 .companies{
     height: 188px;
-    background-color: var(--color3);
+    background-color:#3E3E70;
     display: flex;
     max-width: 100%;
     align-items: center;
@@ -163,6 +168,7 @@ nav{
 .page-2{
     height: 310vh;
     width: 100%;
+    background-color: #FFFFFF;
 }
 .page-2 .headings{
     display: flex;
@@ -200,7 +206,7 @@ nav{
     height: 640px;
     width: 90%;
     border-radius: 50px;
-    background-color: #F4F4F4;
+    background-color: #F6F8FF;
 }
  
 
@@ -258,7 +264,7 @@ nav{
     border-radius: 50px;
 }
 .contactus{
-    height: 220px;
+    height: 240px;
     width: 100%;
   
     
@@ -271,7 +277,7 @@ nav{
 }
 .contactus .cnt-1{
    
-    background-color: #21214a11;
+    background-color: #F6F8FF;
     display: flex;
    flex-direction: column;
    align-items: center;
@@ -358,7 +364,7 @@ nav{
 .skill-grid .box{
     height: 80%;
     width: 20%;
-    background-color: #f3f3fd;
+    background-color: #F6F8FF;
     border: 1px solid black;
     border-radius: 20px;
     background-position: center;
