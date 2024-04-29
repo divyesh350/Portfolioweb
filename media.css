@@ -54,10 +54,17 @@ ul li{
     list-style: none;
    font-size: 9px;
 }
-ul li a{
+.nav-menu a{
     text-decoration: none;
-   
+    font-size: 9px;
     color: black;
+}
+.nav-menu{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 0px;
+    align-items: center;
 }
 .nav-btn{
     background-color: rgb(8, 144, 78);

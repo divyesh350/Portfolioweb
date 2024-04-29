@@ -57,9 +57,7 @@ nav{
     
 }
 .nav-menu a:hover{
-    font-size: 20px;
-    font-weight: 800;
-    color: blue;
+    font-size: 18px;
 }
 .nav-btn{
     background-color: rgb(8, 144, 78);
