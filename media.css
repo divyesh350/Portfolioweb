@@ -1,61 +1,58 @@
+/* media querie  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    box-sizing: border-box;
-}
-:root{
-    --color1:#255BF9;
-    --color2:#AB29A1;
-    --color3:#1C1C57;
-    --color4:#ebe3e3;
-}
-body{
-    max-width: 100vw;
-}
-main{
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
+@media  (max-width:600px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        box-sizing: border-box;
+    }
+
+
+  
 a{
     text-decoration: none;
     
 }
 .head{
-    height: 92px;
-   width: 100%;
+    height: 94px;
+    max-width:100%;
     /* display: flex; */
    
     background-color: var(--color4);
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
     
 }
 .nav-logo{
     display: flex;
 }
+.nav-logo img{
+    width: 15px;
+}
 .nav-1{
     display: flex;
-    gap: 50px;
-    padding: 30px 20px;
+    gap: 10px;
+    padding: 20px 10px;
     position: relative;
     /* align-items: center; */
-   
+   justify-content: flex-start;
+   flex-direction: row;
+   overflow: hidden;
 }
 ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     position: relative;
     top: 5px;
 }
 ul li{
     list-style: none;
-   
+   font-size: 9px;
 }
 ul li a{
     text-decoration: none;
@@ -65,19 +62,20 @@ ul li a{
 .nav-btn{
     background-color: rgb(8, 144, 78);
     color: white;
-    padding: 5px 20px;
-    max-height:50px;
-    max-width: 100px;
+    padding: 5px 10px;
+    max-height:30px;
+    max-width: 70px;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
     /* bottom: 10px; */
-    top: 18px;
-    right: 20px;
+    top: 14px;
+    right: 9px;
     border-style: none;
+    font-size: 9px;
 }
 .nav-1 h4{
-    font-size: 26px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -85,34 +83,35 @@ ul li a{
 /* page-1 */
 
 .page-1{
-    height: 640px;
+    height: 95vh;
     /* background-color: #DEE6FE; */
     display: flex;
-    gap: 250px;
+    flex-direction: column;
+    gap: 15px;
     align-content: center;
     width: 100%;
     overflow: hidden;
 }
 .page-1 .pg-1 { 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .pg-1 .cnt-1{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 0px 60px;
+    
 }
 .pg-1 .cnt-1 h4{
-    font-size: 50px;
+    font-size: 26px;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 28px;
     letter-spacing: 2px;
 }
 .pg-1 .cnt-1 p{
     font-weight: 400;
-  
+    font-size: 14px;
 }
 .pg-1 .cnt-1 .btns{
     display: flex;
@@ -137,8 +136,15 @@ ul li a{
     border: 1px solid rgb(8, 144, 78);
     cursor: default;
 }
-
-
+.pg-2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pg-2 img{
+    height: 257px;
+    width: 257px;
+}
 /* companies */
 
 .companies{
@@ -147,27 +153,31 @@ ul li a{
     display: flex;
     max-width: 100%;
     align-items: center;
-    gap: 150px;
+    gap: 20px;
     
 }
 .companies .cmp-1{
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 .companies .cmp-1 p{
     color: white    !important;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 14px;
 }
 .cmp-2{
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 0px 80px;
+    gap: 20px;
+    padding: 0px 10px;
+    flex-wrap: wrap;
 }
-
+.cmp-2 img{
+    height: 50px;
+    width: 80px;
+}
 /* projects page  */
 .page-2{
-    height: 310vh;
+    height: 610vh;
     width: 100%;
 }
 .page-2 .headings{
@@ -177,35 +187,35 @@ ul li a{
     align-items: center;
 } 
 .page-2 .headings p:nth-child(1){
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 1px;
 }
 .page-2 .headings p:nth-child(2){
-    font-size: 50px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 40px;
     letter-spacing: 1px;
 }
 .page-2 .headings p:nth-child(3){
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 1px;
+    line-height: 20px;
+    
 }
 .projects{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr  ;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
     gap: 50px;
-    padding: 20px 0px 0 80px;
+    padding: 20px 0px 0 20px;
     justify-content: center;
 }
 .projects .box{
-    height: 640px;
-    width: 90%;
-    border-radius: 50px;
+    height: 600px;
+    width: 95%;
+    border-radius: 0px;
     background-color: #F4F4F4;
 }
  
@@ -215,7 +225,7 @@ ul li a{
     height: 400px;
     width: 100%;
     
-   border-radius: 50px;
+   border-radius: 0px;
     
    /* object-fit: cover; */
    
@@ -223,7 +233,7 @@ ul li a{
 .box-vid video{
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+   border-radius: 0px;
     object-fit: cover;
     overflow: hidden;
     object-position: center;
@@ -238,10 +248,10 @@ ul li a{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 40px 20px 10px 20px;
+    padding: 10px 10px;
 }
 .box-text p:nth-child(1){
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
 }
  .box-text p:nth-child(2){
@@ -251,24 +261,23 @@ ul li a{
 .box-text a{
     text-decoration: none;
     color: #255BF9;
+    
 }
 .btns button{
-    color:  black;
+    color: white;
     font-weight: 600;
-    background-color: rgba(244, 234, 234, 0.795);
+    background-color: black;
     padding: 10px 10px;
     border-style: none;
 }
 /* video and text of box  */ 
 .box-vid img{
-    border-radius: 50px;
+    border-radius: 0px;
 }
 .contactus{
-    height: 220px;
+    height: 380px;
     width: 100%;
   
-    
-   
     
 }
 .contactus h2{
@@ -287,7 +296,7 @@ ul li a{
 }
 .cnt-btn{
     display: flex;
-    
+    flex-direction: column;
     gap: 20px;
 }
 .cnt-btn p:nth-child(1){
@@ -340,17 +349,18 @@ ul li a{
 /* myskill page */
 .skill{
     width: 100%;
-    height: 440px;
+    height: 220px;
     
   
     
 }
 .skill-cnt p{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
     padding: 10px 0;
     display: block;
+    margin-top: 5vh;
 }
 .skill-grid {
     display: flex;
@@ -362,18 +372,18 @@ ul li a{
     gap: 20px;
 }
 .skill-grid .box{
-    height: 80%;
+    height: 25%;
     width: 20%;
     background-color: #f3f3fd;
     border: 1px solid black;
     border-radius: 20px;
-    background-position: center;
+    display: flex;
+    justify-content: center;
 }
 .skill-grid .box1{
     background-image: url(img/pngegg.png);
     background-size: contain;
     background-repeat: no-repeat;
-   
 }
 .skill-grid .box2{
     background-image: url(img/pngegg\ \(1\).png);
@@ -390,4 +400,5 @@ ul li a{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
 }
