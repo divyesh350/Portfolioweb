@@ -127,6 +127,8 @@ nav{
    
     border-radius: 10px;
 }
+
+
 .pg-1 .cnt-1 .btn-2 {
     color:  rgb(8, 144, 78);
     background-color: white;
@@ -250,6 +252,14 @@ nav{
     text-decoration: none;
     color: #255BF9;
 }
+.box-text a:hover{
+    background-color: black;
+    color: white;
+   width: 130px;
+   height: 30px;
+   border-radius: 10px;
+   transition: 0.5s ease-in-out;
+}
 .btns button{
     color:  black;
     font-weight: 600;
@@ -335,6 +345,12 @@ nav{
     padding: 10px 10px;
 }
 
+.cnt-social a:hover{
+    
+    color: white;
+    background-color: #000;
+}
+
 /* myskill page */
 .skill{
     width: 100%;
@@ -366,6 +382,11 @@ nav{
     border: 1px solid black;
     border-radius: 20px;
     background-position: center;
+}
+.skill-grid .box:hover{
+    height: 90%;
+    width: 20%;
+    transition:0.5s  ease-in-out;
 }
 .skill-grid .box1{
     background-image: url(img/pngegg.png);

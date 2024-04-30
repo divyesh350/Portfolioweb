@@ -20,7 +20,7 @@ a{
     max-width:100%;
     /* display: flex; */
    
-    background-color: var(--color4);
+    background-color: #FFFFFF;
 }
 nav{
     display: flex;
@@ -184,8 +184,9 @@ ul li{
 }
 /* projects page  */
 .page-2{
-    height: 610vh;
+    height: 550vh;
     width: 100%;
+    background-color: #FFFFFF;
 }
 .page-2 .headings{
     display: flex;
